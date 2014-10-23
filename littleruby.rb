@@ -2,9 +2,9 @@
 
 puts "\n"
 
-puts "     ==========================="
-puts "     [ Little Ruby Riding Hood ]"
-puts "     ==========================="
+puts "==========================="
+puts "[ Little Ruby Riding Hood ]"
+puts "==========================="
 
 puts "\n"
 

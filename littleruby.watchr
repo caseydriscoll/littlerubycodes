@@ -1,3 +1,3 @@
-watch('little_ruby_riding_hood.rb') do
-	system 'ruby ./little_ruby_riding_hood.rb'
+watch('littleruby.rb') do
+	system 'ruby ./littleruby.rb'
 end
