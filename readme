@@ -1,0 +1,13 @@
+Little Ruby Codes is a project to teach introductory learners core ideas to software development in a fun and simple manner.
+
+The idea is to transform a simple and familiar story, which starts as a series of `puts`, into an increasingly dynamic system by adding variables, control structures, classes and possibly more.
+
+Using the classic story of "Little Red Riding Hood" gives the learner a consistent and simple foundation in which to add concepts.
+
+It will also be an introduction to some simple software workflows, like git and commandline execution.
+
+There will be an accompanying website at http://littleruby.codes (a new tld) that can be used through self learning or presentation
+
+The base story is the Charles Perrault version, taken from The University of Pittsburgh website >> http://www.pitt.edu/~dash/type0333.html
+
+This is hopefully the first of many "Object Orientated Stories" (OOStories or 'Double O Stories') to translate abstract literature ideas to code. However it will remain the central one for communicating ideas in the Ruby language. I have a post written about the idea here: http://caseypatrickdriscoll.com/ideas/object-orientated-stories/
