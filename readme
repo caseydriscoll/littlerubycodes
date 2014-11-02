@@ -32,6 +32,7 @@ Chapter 1 - Puts the story
 	- Add header comments with author, date, description
 
 	- Optionally, add code to save output to file
+	- Optionally, show ruby-doc.org
 
 Chapter 2 - Variables
 	- Philosophy of DRY (Don't Repeat Yourself)
@@ -57,6 +58,32 @@ Chapter 2 - Variables
 
 Chapter 3 - Arrays and Hashes
 	- Discuss Arrays
-		+ Convert @item_ variables to @items Array
+		+ Convert @item_ variables to @items Array keeping 'nth' index the same (to be fixed next)
+	- Disuss 0th indexing (zero is first positive number after -1) 
+		http://en.wikipedia.org/wiki/Zero-based_numbering
+		+ Set index of @items back 1
 	- Discuss Hashes
-		+ Convert @villain_trait_ to @villain_traits Hash
+		+ Convert @villain_trait_ to @villain_traits Array
+		+ Add @villain_response Hash
+
+	
+	- Optionally, get into Array and Hash methods
+	- Optionally, show ruby-doc.org
+
+Chapter 4 - Conditions and Logic
+	- Discuss 'For' loops
+		+ Create loop for each trait
+	- Discuss 'each'
+		+ Replace for trait loop with each instead
+
+Chapter 5 - Methods
+	- Discuss creating new methods
+		+ Create 'narrate' method to replace 'puts' that auto adds newline
+		+ Create character_says methods for when characters say lines
+
+Chapter 6 - Objects
+
+
+
+
+

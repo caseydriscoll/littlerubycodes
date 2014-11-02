@@ -5,47 +5,59 @@
 # Description: A modernized retelling of the classic fairy tale, "Little Red Riding Hood"
 
 # Characters
-@hero					= "Little Ruby"
-@hero_trait_1			= "little red riding hood" 
+@hero								= "Little Ruby"
+@hero_trait_1				= "little red riding hood" 
 
-@villain				= "wolf"
-@villain_trait_1		= "big arms"
-@villain_trait_2		= "big legs"
-@villain_trait_3		= "big ears"
-@villain_trait_4		= "big eyes"
-@villain_trait_5		= "big teeth"
+@villain						= "wolf"
+@villain_traits			=	[
+												"big arms",
+												"big legs",
+												"big ears",
+												"big eyes",
+												"big teeth"
+												]
 
-@victim					= "Grandmother"
+@villain_responses	= {
+												"big arms" => "\"All the better to hug you with, my dear.\"",
+												"big legs" => "\"All the better to run with, my child.\"",
+												"big ears" => "\"All the better to hear with, my child.\"",
+												"big eyes" => "\"All the better to see with, my child.\"",
+												"big teeth" => "\"All the better to eat you up with.\""
+											}
+
+@victim							= "Grandmother"
 
 # Items
-@item_1					= "cake"
-@item_2					= "little pot of butter"
-@item_3					= "nuts"
-@item_4					= "butterflies"
-@item_5					= "bouquets of little flowers"
+@items							= [
+												'cake',
+												'little pot of butter',
+												'nuts',
+												'butterflies',
+												'bouquets of little flowers'
+											]
 
 # Plot
-@intro					= "Once upon a time"
-@ending					= "ate her all up"
-@does_a_weird_thing		= "took off her clothes and go into bed"
-@door_noise				= "tap".upcase
-@door_instructions		= "\"Pull the bobbin, and the latch will go up\""
+@intro							= "Once upon a time"
+@ending							= "ate her all up"
+@does_a_weird_thing	= "took off her clothes and go into bed"
+@door_noise					= "tap".upcase
+@door_instructions	= "\"Pull the bobbin, and the latch will go up\""
 
 # Styling
-@linebreak				= "\n" 
-@lineblock				= "============================="
-@squiglies				= "~~~~~~~~~~"
+@linebreak					= "\n" 
+@lineblock					= "============================="
+@squiglies					= "~~~~~~~~~~"
 
 
 # Personal Changes
-@hero_trait_1			= "bright red Nimbus 2000"
-@villain				= "jigglypuff"
-@victim					= "Grand Master Flash"
-@item_1					= "N64"
-@item_2					= "rocking copy of Goldeneye 007"
-@door_noise				= "squish".upcase
-@intro					= "A long time ago in a galaxy far, far away,"
-@ending					= "sang her a lullaby until a responsible grown up could come pick her up"
+@hero_trait_1				= "bright red Nimbus 2000"
+@villain						= "jigglypuff"
+@victim							= "Grand Master Flash"
+@items[0]						= "N64"
+@items[1]						= "rocking copy of Goldeneye 007"
+@door_noise					= "squish".upcase
+@intro							= "A long time ago in a galaxy far, far away,"
+@ending							= "sang her a lullaby until a responsible grown up could come pick her up"
 
 
 # Start
@@ -63,15 +75,15 @@ puts "#{@intro} there lived in a certain village a little country girl, the pret
 
 puts @linebreak
 
-puts "One day her mother, having made some cakes, said to her, \"Go, my dear, and see how your #{@victim.downcase} is doing, for I hear she has been very ill. Take her a #{@item_1}, and this #{@item_2}.\""
+puts "One day her mother, having made some cakes, said to her, \"Go, my dear, and see how your #{@victim.downcase} is doing, for I hear she has been very ill. Take her a #{@items[0]}, and this #{@items[1]}.\""
 
 puts @linebreak
 
-puts "#{@protagonist} set out immediately to go to her #{@victim.downcase}, who lived in another village."
+puts "#{@hero} set out immediately to go to her #{@victim.downcase}, who lived in another village."
 
 puts @linebreak
 
-puts "As she was going through the wood, she met with a #{@villain}, who had a very great mind to eat her up, but he dared not, because of some woodcutters working nearby in the forest. He asked her where she was going. The poor child, who did not know that it was dangerous to stay and talk to a #{@villain}, said to him, \"I am going to see my #{@victim.downcase} and carry her a #{@item_1} and a #{@item_2} from my mother.\""
+puts "As she was going through the wood, she met with a #{@villain}, who had a very great mind to eat her up, but he dared not, because of some woodcutters working nearby in the forest. He asked her where she was going. The poor child, who did not know that it was dangerous to stay and talk to a #{@villain}, said to him, \"I am going to see my #{@victim.downcase} and carry her a #{@items[0]} and a #{@items[1]} from my mother.\""
 
 puts @linebreak
 
@@ -87,7 +99,7 @@ puts "\"Well,\" said the #{@villain}, \"and I'll go and see her too. I'll go thi
 
 puts @linebreak
 
-puts "The #{@villain} ran as fast as he could, taking the shortest path, and the little girl took a roundabout way, entertaining herself by gathering #{@item_3}, running after #{@item_4}, and gathering #{@item_5}. It was not long before the #{@villain} arrived at the old woman's house. He knocked at the door: #{@door_noise}, #{@door_noise}."
+puts "The #{@villain} ran as fast as he could, taking the shortest path, and the little girl took a roundabout way, entertaining herself by gathering #{@items[2]}, running after #{@items[3]}, and gathering #{@items[4]}. It was not long before the #{@villain} arrived at the old woman's house. He knocked at the door: #{@door_noise}, #{@door_noise}."
 
 puts @linebreak
 
@@ -95,7 +107,7 @@ puts "\"Who's there?\""
 
 puts @linebreak
 
-puts "\"Your grandchild, #{@hero},\" replied the #{@villain}, counterfeiting her voice; \"who has brought you a #{@item_1} and a #{@item_2} sent you by mother.\""
+puts "\"Your grandchild, #{@hero},\" replied the #{@villain}, counterfeiting her voice; \"who has brought you a #{@items[0]} and a #{@items[1]} sent you by mother.\""
 
 puts @linebreak
 
@@ -111,7 +123,7 @@ puts "Who's there?"
 
 puts @linebreak
 
-puts "#{@hero}, hearing the big voice of the #{@villain}, was at first afraid; but believing her #{@victim.downcase} had a cold and was hoarse, answered, \"It is your grandchild #{@hero}, who has brought you a #{@item_1} and a #{@item_2} mother sends you.\""
+puts "#{@hero}, hearing the big voice of the #{@villain}, was at first afraid; but believing her #{@victim.downcase} had a cold and was hoarse, answered, \"It is your grandchild #{@hero}, who has brought you a #{@items[0]} and a #{@items[1]} mother sends you.\""
 
 puts @linebreak
 
@@ -123,47 +135,47 @@ puts "#{@hero} pulled the bobbin, and the door opened."
 
 puts @linebreak
 
-puts "The #{@villain}, seeing her come in, said to her, hiding himself under the bedclothes, \"Put the #{@item_1} and the #{@item_2} upon the stool, and come get into bed with me.\""
+puts "The #{@villain}, seeing her come in, said to her, hiding himself under the bedclothes, \"Put the #{@items[0]} and the #{@items[1]} upon the stool, and come get into bed with me.\""
 
 puts @linebreak
 
-puts "#{@hero} #{@does_a_weird_thing}. She was greatly amazed to see how her #{@victim.downcase} looked in her nightclothes, and said to her, \"#{@victim}, what #{@villain_trait_1} you have!\""
+puts "#{@hero} #{@does_a_weird_thing}. She was greatly amazed to see how her #{@victim.downcase} looked in her nightclothes, and said to her, \"#{@victim}, what #{@villain_traits[0]} you have!\""
 
 puts @linebreak
 
-puts "\"All the better to hug you with, my dear.\""
+puts @villain_responses[@villain_traits[0]]
 
 puts @linebreak
 
-puts "\"#{@victim}, what #{@villain_trait_2} you have!\""
+puts "\"#{@victim}, what #{@villain_traits[1]} you have!\""
 
 puts @linebreak
 
-puts "\"All the better to run with, my child.\""
+puts @villain_responses[@villain_traits[1]]
 
 puts @linebreak
 
-puts "\"#{@victim}, what #{@villain_trait_3} you have!\""
+puts "\"#{@victim}, what #{@villain_traits[2]} you have!\""
 
 puts @linebreak
 
-puts "\"All the better to hear with, my child.\""
+puts @villain_responses[@villain_traits[2]]
 
 puts @linebreak
 
-puts "\"#{@victim}, what #{@villain_trait_4} you have!\""
+puts "\"#{@victim}, what #{@villain_traits[3]} you have!\""
 
 puts @linebreak
 
-puts "\"All the better to see with, my child.\""
+puts @villain_responses[@villain_traits[3]]
 
 puts @linebreak
 
-puts "\"#{@victim}, what #{@villain_trait_5} you have got!\""
+puts "\"#{@victim}, what #{@villain_traits[4]} you have got!\""
 
 puts @linebreak
 
-puts "\"All the better to eat you up with.\""
+puts @villain_responses[@villain_traits[4]]
 
 puts @linebreak
 
